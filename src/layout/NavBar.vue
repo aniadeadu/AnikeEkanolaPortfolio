@@ -1,20 +1,18 @@
 <template>
-  <div class="flex justify-end">
-    <nav
-      class="gap-8 flex items-center w-full py-[3.2rem] px-28 z-40 justify-between fixed top-0py-3 bg-transparent"
-    >
-      <ul class="flex justify-between w-full">
-        <li
-          class="font-[Raleway] text-[0.99rem] font-medium hover:underline transition-all tracking-tight cursor-pointer capitalize"
-        >
-          <router-link to="/about">About</router-link>
-        </li>
-        <li class="w-9">
-          <router-link to="/"><img src="../assets/AE.png" /></router-link>
-        </li>
-      </ul>
-    </nav>
-  </div>
+  <nav
+    class="gap-8 flex items-center w-full lg:py-[3.2rem] md:[py-[2.5rem] px-5 md:px-20 lg:px-28 z-40 justify-between fixed top-0 py-12 bg-transparent"
+  >
+    <ul class="flex justify-between w-full">
+      <li
+        class="font-[Raleway] text-[0.99rem] font-medium hover:underline transition-all tracking-tight cursor-pointer capitalize"
+      >
+        <router-link to="/about">About</router-link>
+      </li>
+      <li class="w-9">
+        <router-link to="/"><img src="../assets/AE.png" /></router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <!-- <style>

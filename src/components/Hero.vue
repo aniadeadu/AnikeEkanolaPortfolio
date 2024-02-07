@@ -11,10 +11,10 @@ export default {
 <template>
   <div class="h-[100vh] w-[100vw] -z-20 relative top-0">
     <section
-      class="md:w-[97%] w-[95%] h-[96%] absolute -translate-x-[50%] left-[50%] -translate-y-[50%] top-[50%] md:rounded-2xl"
+      class="md:w-[97%] w-[95%] h-[96%] absolute -translate-x-[50%] left-[50%] -translate-y-[50%] top-[50%] rounded-[1.2rem]"
     >
       <div
-        class="w-[100%] h-[100%] mx-auto backdrop-blur-2xl bg-[#0f0f0f50] absolute rounded-[1.2rem] z-40 top-0"
+        class="w-[100%] h-[100%] mx-auto backdrop-blur-2xl bg-[#0f0f0f50] rounded-[1.2rem] absolute z-40 top-0"
       >
         <div class="h-[100%] w-full flex justify-center items-center">
           <div class="max-w-[80%] lg:max-w-[60%] mx-auto space-y-8">

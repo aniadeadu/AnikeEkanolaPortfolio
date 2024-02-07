@@ -1,5 +1,5 @@
-<script>
-// import Home from "@/pages/Home.vue";
+<script setup>
+import Footer from "./layout/Footer.vue";
 // import About from "@/pages/About.vue";
 // import Projects from "@/pages/Projects.vue";
 // import Feature from "@/components/Feature.vue";
@@ -33,6 +33,9 @@
   <div class="w-full h-full">
     <router-view></router-view>
   </div>
+  <footer>
+    <Footer></Footer>
+  </footer>
 </template>
 
 <style></style>

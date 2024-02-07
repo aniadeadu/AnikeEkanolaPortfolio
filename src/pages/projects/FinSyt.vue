@@ -39,6 +39,7 @@ export default {
   <div>
     <projects
       description="finanacial assistant"
+      url="finsyt.web.app"
       dutie="technologies used"
       :duties="technologies"
       date="2023"

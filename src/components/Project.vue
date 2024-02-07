@@ -10,6 +10,7 @@ export default {
 
   props: [
     "index",
+    "url",
     "description",
     "role",
     "roles",
@@ -46,19 +47,28 @@ h4 {
     </header>
     <div class="w-full h-full space-y-8">
       <div
-        class="w-full flex flex-col items-center gap-8 z-40 px-5 lg:px-36 pt-10 lg:pt-20"
+        class="w-full flex flex-col items-center gap-8 z-40 px-5 md:px-20 lg:px-36 pt-10 lg:pt-20"
       >
-        <Heading about="text-[3.5rem]">
+        <Heading about="md:text-[3.5rem] text-[2.5rem]">
           <template #heading>
             {{ heading }}
           </template>
         </Heading>
         <div class="flex-col md:flex-row flex w-full justify-between">
-          <div
-            class="font-semibold tracking-wide"
-            style="font-variant: small-caps"
-          >
-            {{ description }}
+          <div>
+            <div
+              class="font-semibold tracking-wide"
+              style="font-variant: small-caps"
+            >
+              {{ description }}
+            </div>
+            <a
+              :href="'https://' + url"
+              target="_blank"
+              class="font-medium text-[0.99rem] cursor-pointer underline"
+              style="font-variant: small-caps"
+              >visit</a
+            >
           </div>
           <div class="flex space-x-16">
             <div>
@@ -116,14 +126,14 @@ h4 {
           </p>
         </div>
       </div>
-      <div class="min-w-[100vw] overflow-hidden h-[100%] relative">
+      <div class="w-[100vw] overflow-hidden h-[100%] relative">
         <div
           :class="
             'w-[100%] z-10 h-full absolute scale-125 bg-gradient-to-r ' +
             gradientOverlay
           "
         ></div>
-        <img :src="backgroundImage" class="min-w-[100vw] h-full" />
+        <img :src="backgroundImage" class="w-[100vw] h-full" />
         <div
           class="absolute w-full z-40 left-[50%] top-[50%] -translate-y-[50%] -translate-x-[50%]"
         >

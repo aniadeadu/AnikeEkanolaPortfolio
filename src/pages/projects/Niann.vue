@@ -38,6 +38,7 @@ export default {
   <div>
     <projects
       description="ecommerce"
+      url="niann-61538.web.app"
       dutie="technologies used"
       :duties="technologies"
       date="2023"

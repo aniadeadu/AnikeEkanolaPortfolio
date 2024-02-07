@@ -33,6 +33,7 @@ export default {
     <projects
       index="01"
       description="landing page"
+      url="jekinraa.com"
       role="role"
       roles="frontend web developer"
       dutie="responsibilties"

@@ -41,6 +41,7 @@ export default {
   <div>
     <projects
       description="messaging web app"
+      url="envoy-14bad.web.app"
       dutie="technologies used"
       :duties="technologies"
       date="2023"
