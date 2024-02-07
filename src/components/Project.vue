@@ -54,14 +54,16 @@ h4 {
             {{ heading }}
           </template>
         </Heading>
-        <div class="flex-col md:flex-row flex w-full justify-between">
+        <div
+          class="flex-col md:flex-row flex w-full justify-between gap-7 md:gap-0"
+        >
           <div>
-            <div
+            <divgi
               class="font-semibold tracking-wide"
               style="font-variant: small-caps"
             >
               {{ description }}
-            </div>
+            </divgi>
             <a
               :href="'https://' + url"
               target="_blank"
@@ -72,7 +74,7 @@ h4 {
           </div>
           <div class="flex space-x-16">
             <div>
-              <h4 class="font-semibold text-[1.1rem] tracking-tight">
+              <h4>
                 {{ role }}
               </h4>
               <p style="font-variant: small-caps">{{ roles }}</p>
